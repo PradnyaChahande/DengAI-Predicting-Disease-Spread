@@ -1,8 +1,11 @@
 Problem Discussion
+
 In this paper, we attempt to develop machine learning models to predict the outbreak of Dengue in the cities of San Juan and Iquitos in South America. Dengue is a mosquito-borne tropical disease caused by the dengue virus. As it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. We are given historical data for these two cities aggregated by the number of Dengue cases reported weekly over the period from 1990 to 2008. The data also contains climate data from four different sources. Since this is a time series data, we discuss below our approach to build accurate machine learning models based on time series, and methods to do exploratory data analysis, data visualization and feature selection before applying predictive techniques.
 
 Introduction
+
 Significance
+
 Dengue fever is a mosquito-borne disease that occurs in tropical and sub-tropical parts of the world. In mild cases, symptoms are like the flu: fever, rash, and muscle and joint pain. In severe cases, dengue fever can cause severe bleeding, low blood pressure, and even death. Because it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. Although the relationship to climate is complex, a growing number of scientists argue that climate change is likely to produce distributional shifts that will have significant public health implications worldwide. In recent years’ dengue fever has been spreading. Historically, the disease has been most prevalent in Southeast Asia and the Pacific islands. These days many of the nearly half billion cases per year are occurring in Latin America. A time series model having good degree of accuracy can be utilized in predicting the number off Dengue cases and thereby help authorities and medical professionals to do contingency planning. From the perspective of data scientists analyzing time-series data like this proves to be a worthwhile challenge which helps in developing understanding different dynamics affecting time-series models. 
 
 Related Work
