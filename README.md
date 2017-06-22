@@ -8,8 +8,8 @@ Significance
 
 Dengue fever is a mosquito-borne disease that occurs in tropical and sub-tropical parts of the world. In mild cases, symptoms are like the flu: fever, rash, and muscle and joint pain. In severe cases, dengue fever can cause severe bleeding, low blood pressure, and even death. Because it is carried by mosquitoes, the transmission dynamics of dengue are related to climate variables such as temperature and precipitation. Although the relationship to climate is complex, a growing number of scientists argue that climate change is likely to produce distributional shifts that will have significant public health implications worldwide. In recent years’ dengue fever has been spreading. Historically, the disease has been most prevalent in Southeast Asia and the Pacific islands. These days many of the nearly half billion cases per year are occurring in Latin America. A time series model having good degree of accuracy can be utilized in predicting the number off Dengue cases and thereby help authorities and medical professionals to do contingency planning. From the perspective of data scientists analyzing time-series data like this proves to be a worthwhile challenge which helps in developing understanding different dynamics affecting time-series models. 
 
-Related Work
 Literature Overview
+
 We now discuss different research papers, journals, conferences and publications where various time series models that were used for forecasting outbreak of epidemic diseases like Malaria, Dengue, Typhoid etc. 
 
 1. SARIMA (Seasonal ARIMA) implementation on
@@ -48,12 +48,11 @@ The training and test data had many missing values especially in the numerical v
 However, to forecast, we need to make our time series data stationary. What this means is that we need to remove seasonality from our data to extra the base trend of series. A stationary time series is one whose statistical properties such as mean, variance, autocorrelation, etc. are all constant over time. 
 
 Data Visualization
+
 Data Visualization is an important aspect of exploratory data analysis (EDA). In this case, can visualize our target variable across the time period to view its seasonality in the dengue outbreaks.  Plots are graphed to see that the outbreaks are fairly seasonal for both cities.    
 
 The extreme peaks are due to epidemics. Thereafter we also have a look at the affecting variables to find out the co-relation between variables. The correlation plot of the climate variables gathered from various sources are also plotted. 
  
-
-Proposed Approaches
 Application of Predictive Techniques
 
 We tried 3 different models on our time series data, namely Random Forest, Neural Networks and Seasonal ARIMA. We now discuss each of these models, and how we used them.
@@ -67,6 +66,7 @@ As per the given problem statement, we are required to not only classify the 	gi
 
 Libraries(R): 
 We used randomForest function from randomForest library to model and predict the number of weekly cases for both cities.
+
 Predictive Technique #2 Seasonal ARIMA
 
 An autoregressive integrated moving average (ARIMA) model is a generalization of an autoregressive moving average (ARMA) model. Both models are fitted to time series data either to better understand the data or to predict future points in the series (forecasting). ARIMA models are applied in some cases where data show evidence of non-stationarity, where an initial differencing step (corresponding to the "integrated" part of the model) can be applied one or more times to eliminate the non-stationarity. 
@@ -80,6 +80,7 @@ Given below are details of Seasonal ARIMA model we tuned after trial and error; 
 Libraries(R): 
 1.	‘Arima’ function was used from the forecast library.
 2.	Auto.arima function was used to calibrate the best parameters.
+
 Predictive Technique #3 Neural Network
 
 Artificial neural networks were designed to be modelled after the structure of the brain. They were first devised in 1943 by researchers Warren McCulloch and Walter Pitts [3]. Backpropagation, discovered by Paul Werbos [4], is a way of training artificial neural networks by attempting to minimize the errors. This algorithm allowed scientists to train artificial networks much more quickly. Each artificial neural network consists of many hidden layers. Each hidden layer in the artificial neural network consists of multiple nodes. Each node is linked to other nodes using incoming and outgoing connections. Each of the connections can have a different, adjustable weight. Data is passed through these many hidden layers and the output is eventually interpreted as different results.
@@ -99,6 +100,7 @@ Random Forest   	27.2933
 Neural Net	      34.8846
 
 Learning and Limitations
+
 We now discuss our learnings in terms of advantages and limitations of each model.
 
 Overall Competition
